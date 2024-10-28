@@ -26,7 +26,7 @@ def is_magic_square(array:list[list[int]]) -> bool:
     sumlist.append(sum(diag2))
 
     for k in sumlist:
-        if k != 15:
+        if k != sumlist[0]:
             return False
     
     return True
